@@ -6,7 +6,9 @@
     "build": "webpack --env=prod",
     "sass:watch": "sass style.scss:style.css --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "axios": "^0.18.0",

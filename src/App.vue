@@ -1,7 +1,7 @@
 <template>
   <div 
     id="vue-wordpress-app"
-    class="container"
+    class="container-fluid"
     @click="handleClicks"
   >
     <div
@@ -99,63 +99,4 @@ export default {
 </script>
 
 <style>
-
-.site-branding {
-  display: inline-block;
-  padding: 1rem 0;
-  cursor: pointer
-}
-
-.logo {
-  display: inline-block;
-  vertical-align: middle;
-  height: 4.8rem;
-  width: auto;
-  margin: 0 .4rem 0 0;
-}
-
-.site-branding>span {
-  vertical-align: middle;
-  font-size: 2.4rem;
-  font-weight: bold;
-}
-
-.main-menu {
-  position: sticky;
-  top: -1px;
-  z-index: 2;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  background: #fff;
-  padding: 1rem 0;
-  border-top: 1px solid rgba(0,0,0,.05);
-  border-bottom: 1px solid rgba(0,0,0,.05);
-}
-
-.main-menu>a {
-  margin-right: 2%;
-}
-
-/* Vue transition classes
--------------------------------------------- */
-
-.fade-enter-active {
-  transition: opacity .4s cubic-bezier(.4,0,0,1);
-}
-
-.fade-leave-active {
-  transition: opacity .2s cubic-bezier(.4,0,0,1);
-}
-
-.fade-enter-to,
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
 </style>
