@@ -733,6 +733,7 @@ progress {
 
 .container,
 .container-fluid,
+.main-container,
 .container-xxl,
 .container-xl,
 .container-lg,
@@ -3863,7 +3864,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.navbar {
+.navbar, .main-navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
@@ -3891,19 +3892,27 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
-.navbar > .container,
+.navbar > .container, .main-navbar > .container,
 .navbar > .container-fluid,
+.main-navbar > .container-fluid,
+.navbar > .main-container,
+.main-navbar > .main-container,
 .navbar > .container-sm,
+.main-navbar > .container-sm,
 .navbar > .container-md,
+.main-navbar > .container-md,
 .navbar > .container-lg,
+.main-navbar > .container-lg,
 .navbar > .container-xl,
-.navbar > .container-xxl {
+.main-navbar > .container-xl,
+.navbar > .container-xxl,
+.main-navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
 }
-.navbar-brand {
+.navbar-brand, .brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
@@ -3912,7 +3921,7 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar-brand:hover, .navbar-brand:focus {
+.navbar-brand:hover, .brand:hover, .navbar-brand:focus, .brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }
 
@@ -4041,31 +4050,31 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
-  .navbar-expand-md {
+  .navbar-expand-md, .main-navbar {
     flex-wrap: nowrap;
     justify-content: flex-start;
   }
-  .navbar-expand-md .navbar-nav {
+  .navbar-expand-md .navbar-nav, .main-navbar .navbar-nav {
     flex-direction: row;
   }
-  .navbar-expand-md .navbar-nav .dropdown-menu {
+  .navbar-expand-md .navbar-nav .dropdown-menu, .main-navbar .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-md .navbar-nav .nav-link {
+  .navbar-expand-md .navbar-nav .nav-link, .main-navbar .navbar-nav .nav-link {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
   }
-  .navbar-expand-md .navbar-nav-scroll {
+  .navbar-expand-md .navbar-nav-scroll, .main-navbar .navbar-nav-scroll {
     overflow: visible;
   }
-  .navbar-expand-md .navbar-collapse {
+  .navbar-expand-md .navbar-collapse, .main-navbar .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
   }
-  .navbar-expand-md .navbar-toggler {
+  .navbar-expand-md .navbar-toggler, .main-navbar .navbar-toggler {
     display: none;
   }
-  .navbar-expand-md .offcanvas {
+  .navbar-expand-md .offcanvas, .main-navbar .offcanvas {
     position: static;
     z-index: auto;
     flex-grow: 1;
@@ -4077,10 +4086,10 @@ textarea.form-control-lg {
     transform: none !important;
     transition: none;
   }
-  .navbar-expand-md .offcanvas .offcanvas-header {
+  .navbar-expand-md .offcanvas .offcanvas-header, .main-navbar .offcanvas .offcanvas-header {
     display: none;
   }
-  .navbar-expand-md .offcanvas .offcanvas-body {
+  .navbar-expand-md .offcanvas .offcanvas-body, .main-navbar .offcanvas .offcanvas-body {
     display: flex;
     flex-grow: 0;
     padding: 0;
@@ -4275,7 +4284,8 @@ textarea.form-control-lg {
 }
 
 .navbar-dark,
-.navbar[data-bs-theme=dark] {
+.navbar[data-bs-theme=dark],
+[data-bs-theme=dark].main-navbar {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
@@ -11857,6 +11867,19 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.main-container {
+  background-color: #000;
+  color: #fff;
+}
+
+.brand {
+  color: #fff;
+  background-color: rgba(6, 6, 7, 0.616);
+}
+.brand :hover {
+  color: #fff;
+  background-color: rgba(6, 6, 7, 0.616);
 }
 
 /*# sourceMappingURL=style.css.map */

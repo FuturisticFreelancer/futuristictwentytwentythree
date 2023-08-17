@@ -9,3 +9,29 @@ Text Domain: vue-wordpress
 
 // @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+$background-color-primary: #000;
+$background-color-secondary: rgba(6, 6, 7, 0.616);
+$text-color: #fff;
+$hover-color: #ffd;
+
+.main-container{
+    @extend .container-fluid;
+    background-color: $background-color-primary;
+    color: $text-color;
+}
+
+.main-navbar{
+    @extend .navbar;
+    @extend .navbar-expand-md;
+}
+
+.brand{
+    @extend .navbar-brand;
+    color: $text-color;
+    background-color: $background-color-secondary;
+    :hover{
+        color: $text-color;
+        background-color: $background-color-secondary;
+    }
+}

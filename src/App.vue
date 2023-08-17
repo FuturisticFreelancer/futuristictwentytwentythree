@@ -1,20 +1,21 @@
 <template>
   <div 
     id="vue-wordpress-app"
-    class="container-fluid"
+    class="main-container"
     @click="handleClicks"
   >
-    <div
-      class="site-branding"
-      @click="$router.push('/')"
-    >
-      <img
-        v-if="logo"
-        class="logo"
-        :src="logo.source_url"
-        :alt="logo.alt_text"
-      />
-      <span>{{ site.name }}</span>
+    <div class="main-navbar">
+      <div class="container-fluid">
+        <a class="brand" @click="$router.push('/')">
+          <img
+            v-if="logo"
+            class="logo"
+            :src="logo.source_url"
+            :alt="logo.alt_text"
+          />
+          <span>{{ site.name }}</span>
+        </a>
+      </div>
     </div>
     <nav-menu
       class="main-menu" 
