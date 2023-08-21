@@ -1,37 +1,9 @@
 /*
-Theme Name:  Futuristic Twenty Twenty Three
-Author:      Tomasz Burzyński
-Author URI:  https://github.com/bucky355
-Description: Takes a hybrid approach, using Wordpress to manage and serve initial content. Vue.js takes over all future in-site navigation effectively transforming the site into a SPA.
-Version:     0.0.1
-Text Domain: vue-wordpress
+Theme Name: Futuristic Twenty Twenty Three
+Author: Tomasz Burzyński
+Author URI: tomaszburzynski.com
+Description: Theme for my personal page.
+Version: 1.0.0
+Text Domain: futuristic-twentytwentythree
 */
 
-// @import "../node_modules/bootstrap/scss/bootstrap";
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
-
-$background-color-primary: #000;
-$background-color-secondary: rgba(6, 6, 7, 0.616);
-$text-color: #fff;
-$hover-color: #ffd;
-
-.main-container{
-    @extend .container-fluid;
-    background-color: $background-color-primary;
-    color: $text-color;
-}
-
-.main-navbar{
-    @extend .navbar;
-    @extend .navbar-expand-md;
-}
-
-.brand{
-    @extend .navbar-brand;
-    color: $text-color;
-    background-color: $background-color-secondary;
-    :hover{
-        color: $text-color;
-        background-color: $background-color-secondary;
-    }
-}
