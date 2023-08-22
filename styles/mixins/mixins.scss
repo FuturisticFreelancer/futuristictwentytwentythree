@@ -1,0 +1,13 @@
+@mixin primary-colors{
+    color: $primary-text-color;
+    background-color: $primary-background-color;
+}
+
+@mixin secondary-colors{
+    color: $secondary-text-color;
+    background-color: $secondary-background-color;
+}
+
+@mixin default-text{
+    
+}

@@ -7,3 +7,11 @@ Version: 1.0.0
 Text Domain: futuristic-twentytwentythree
 */
 
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+@import "./styles/variables/colors";
+@import "./styles/mixins/mixins";
+
+@import "./styles/main-page";
+@import "./styles/navbar.scss";
+@import "./styles/footer.scss";
