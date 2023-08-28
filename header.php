@@ -21,7 +21,7 @@
                     <?php 
                         wp_nav_menu([
                             'theme_location' => 'header-menu',
-                            'menu_class' => 'navbar-nav ms-auto mb-lg-0 me-5 has-medium-font-size',
+                            'menu_class' => 'navbar-nav ms-auto mb-lg-0 me-5',
                             'container' => 'div',
                             'container_class' => 'collapse navbar-collapse',
                             'container_id' => 'navigation',

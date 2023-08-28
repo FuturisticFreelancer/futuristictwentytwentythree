@@ -1,11 +1,13 @@
 .futuristic-nav{
     @extend .navbar, .navbar-expand-md, .sticky-top;
-    background-color: $primary-background-color;
+    background-color: $deep-space-blue;
     .nav-div{
         @extend .container-fluid, .d-flex, .justify-content-between;
-        color: $primary-text-color;
     }
     .navbar-brand{
-        color: $primary-text-color;
+        color: $stellar-silver;
+    }
+    a{
+        color: $stellar-silver;
     }
 }

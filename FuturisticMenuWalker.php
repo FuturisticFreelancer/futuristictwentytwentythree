@@ -6,9 +6,9 @@ class Futuristic_Menu_Walker extends Walker_Nav_Menu {
 
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
         if($depth == 0){
-            $output .= '<li class="nav-item dropdown has-medium-font-size">';
+            $output .= '<li class="nav-item dropdown">';
         }else{
-            $output .= '<li class="menu-color has-medium-font-size">';
+            $output .= '<li class="nav-item">';
         }
         if($this->has_children){
             $output .= '<a class="nav-link dropdown-toggle"

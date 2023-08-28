@@ -28,4 +28,26 @@ function fttt_theme_register_menus(){
 }
 
 add_action('init', 'fttt_theme_register_menus');
+
+function fttt_register_taxonomies(){
+    $labels = array(
+        'name' => 'Service Icons',
+        'singular_name' => 'Service Icon',
+        'menu_name' => 'Service Icons'
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'public' => false,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'hierarchical' => false,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'service-icon')
+    );
+
+    register_taxonomy('service-icon', 'post', $args);
+}
+
+add_action('init', 'fttt_register_taxonomies');
 ?>

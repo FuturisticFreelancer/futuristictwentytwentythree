@@ -1,12 +1,10 @@
 .footer{
-    @include primary-colors;
     display: flex;
     align-items: center;
     padding: 1rem;
 }
 
 .copyrights-link{
-    @include primary-colors;
     text-decoration: none;
     text-align: center;
     :hover{
